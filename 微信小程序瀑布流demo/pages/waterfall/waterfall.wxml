@@ -10,6 +10,7 @@
   parameter：
     bindscrolltolower： 触发事件
     lower-threshold：100	距底部/右边多远时（单位px），触发 scrolltolower 事件
+    mode="widthFix" : 给图片设置css widht:100%  这个属性自适应高度。参考官网image组件 即可
   -->
 <!--建议给当前页面添加一个白色遮罩层 外加加载动画 数据加载完成在关闭 避免网速过慢加载图过慢造成页面使用感不好-->
 <scroll-view 
