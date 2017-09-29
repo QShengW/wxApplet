@@ -1,0 +1,11 @@
+{
+    "pages": [
+        "pages/waterfall/waterfall"
+    ],
+    "window": {
+        "backgroundTextStyle": "white",
+        "navigationBarBackgroundColor": "#ff7826",
+        "navigationBarTitleText": "瀑布流加载",
+        "navigationBarTextStyle": "white"
+    }
+}

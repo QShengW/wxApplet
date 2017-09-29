@@ -1,0 +1,21 @@
+/* tab.wxss */
+page{background-color:#f9f8f9;height: 100%}
+
+/*瀑布流*/
+.waterfall{
+  width: 100%;
+}
+.waterfall .img_item {
+  width: 48%;
+  margin:0 1%;
+  display: inline-block;
+  vertical-align: top;
+}
+.waterfall text{
+  font-size: 14px;
+  line-height: 25px;
+}
+image{
+  width: 100%;
+  height: 0;
+}

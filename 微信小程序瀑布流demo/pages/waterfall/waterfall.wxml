@@ -1,0 +1,35 @@
+<!--tab.wxml-->
+
+<!-- 因为我的项目有多个瀑布流  这里使用的是scroll-view 在触底的时候会触发多次请求 -->
+<!-- 如果你的项目是单页就这一个瀑布流的话
+     就直接使用view这个组件（删除scroll-view 组件标签改为view即可）
+     在配合注册 onReachBottom（页面上拉触底事件的处理函数）
+     进行上拉加载即可
+-->
+<!-- 
+  parameter：
+    bindscrolltolower： 触发事件
+    lower-threshold：100	距底部/右边多远时（单位px），触发 scrolltolower 事件
+  -->
+<scroll-view 
+  scroll-y="true"
+  bindscrolltolower="lower"
+  lower-threshold="100"
+  style="height:100%;">
+  <view class="tabSwitch">
+      <view class="waterfall">
+          <view class="img_item">
+              <view wx:for="{{col1}}" wx:key="imgid">
+                  <image src="http://www.love594.cn/{{item.thumb}}" mode="widthFix"></image>
+  <text>{{ item.title }}</text>
+              </view>
+          </view>
+          <view class="img_item">
+              <view wx:for="{{col2}}" wx:key="imgid">
+                  <image src="http://www.love594.cn/{{item.thumb}}" mode="widthFix"></image>
+  <text>{{ item.title }}</text>
+              </view>
+          </view>
+      </view>
+  </view>
+</scroll-view>
