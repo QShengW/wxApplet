@@ -1,19 +1,37 @@
-/* tab.wxss */
-page{background-color:#f9f8f9;height: 100%}
+/* waterfall.wxss */
+page{height: 100%}
 
 /*瀑布流*/
-.waterfall{
+scroll-view{
   width: 100%;
+  /*height: 1200px*/
 }
-.waterfall .img_item {
+.waterfall{
+  margin: 30rpx 30rpx 0 30rpx;
+  box-sizing: border-box;
+}
+.waterfall .view {
   width: 48%;
-  margin:0 1%;
   display: inline-block;
   vertical-align: top;
 }
+.waterfall .view view{
+  margin-bottom: 15rpx;
+}
 .waterfall text{
-  font-size: 14px;
-  line-height: 25px;
+  text-align: center;
+  width: 100%;
+  padding: 0 10rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+  height: 68rpx;
+  line-height: 68rpx;
+  display: inline-block;
+  font-size: 24rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  color: #646464;
 }
 image{
   width: 100%;

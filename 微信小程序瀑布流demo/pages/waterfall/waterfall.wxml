@@ -11,24 +11,23 @@
     bindscrolltolower： 触发事件
     lower-threshold：100	距底部/右边多远时（单位px），触发 scrolltolower 事件
   -->
+<!--建议给当前页面添加一个白色遮罩层 外加加载动画 数据加载完成在关闭 避免网速过慢加载图过慢造成页面使用感不好-->
 <scroll-view 
   scroll-y="true"
   bindscrolltolower="lower"
   lower-threshold="100"
   style="height:100%;">
-  <view class="tabSwitch">
-      <view class="waterfall">
-          <view class="img_item">
-              <view wx:for="{{col1}}" wx:key="imgid">
-                  <image src="http://www.love594.cn/{{item.thumb}}" mode="widthFix"></image>
-  <text>{{ item.title }}</text>
-              </view>
+  <view class="waterfall">
+      <view class="view" style="margin-right:20rpx">
+          <view wx:for="{{Arr1}}" wx:key="imgid">
+              <image src="http://www.love594.cn/{{item.thumb}}" mode="widthFix"></image>
+<text>{{ item.title }}</text>
           </view>
-          <view class="img_item">
-              <view wx:for="{{col2}}" wx:key="imgid">
-                  <image src="http://www.love594.cn/{{item.thumb}}" mode="widthFix"></image>
-  <text>{{ item.title }}</text>
-              </view>
+      </view>
+      <view class="view">
+          <view wx:for="{{Arr2}}" wx:key="imgid">
+              <image src="http://www.love594.cn/{{item.thumb}}" mode="widthFix"></image>
+<text>{{ item.title }}</text>
           </view>
       </view>
   </view>
