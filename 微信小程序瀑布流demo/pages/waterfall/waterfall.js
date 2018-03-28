@@ -14,7 +14,6 @@ Page({
      * 页面在加载执行的是先执行加载一页
      * */
     loadImages: function () {
-        let This = this;
         /**
          * 单图
          * */
@@ -28,9 +27,9 @@ Page({
             },
             success: (res) => {
                 console.log(res.data);
+                // data建立数组col1 和 col2
+                let { Arr1, Arr2} = this.data
                 if (res.data.arr) {//这是后台取出的数据，数组
-                    let Arr1 = This.data.Arr1;// 先在data上建立数组col1
-                    let Arr2 = This.data.Arr2;// 先在data上建立数组col2
                     for (let i = 0; i < res.data.arr.length; i++) {//在这里获取后台的数组
                         if (res.data.arr[i].id % 2 == 1) {//这里进行获取的 奇数偶数来进行数据分开
                             Arr1.push(res.data.arr[i]);//数组添加数据
@@ -38,7 +37,7 @@ Page({
                             Arr2.push(res.data.arr[i]);//数组添加数据
                         }
                     }
-                    This.setData({
+                    this.setData({
                         Arr1,//这里在进行数据赋值
                         Arr2//这里在进行数据赋值
                     });
@@ -56,7 +55,6 @@ Page({
          * 原理相同
          * 这儿的数组也是获取已有的数组进行push增加
          **/
-        let This = this;
         wx.request({
             url: 'http://www.love594.cn/index.php/Index/imglist',
             data: {
@@ -66,8 +64,8 @@ Page({
             success: (res) => {
                 console.log(res.data);
                 if (res.data.arr) {
-                    let Arr1 = This.data.Arr1;
-                    let Arr2 = This.data.Arr2;
+                   // data建立数组col1 和 col2
+                    let { Arr1, Arr2} = this.data
                     for (let i = 0; i < res.data.arr.length; i++) {
                         if (res.data.arr[i].id % 2 == 1) {
                             Arr1.push(res.data.arr[i]);
@@ -75,7 +73,7 @@ Page({
                             Arr2.push(res.data.arr[i]);
                         }
                     }
-                    This.setData({
+                    this.setData({
                         Arr1,
                         Arr2
                     });
