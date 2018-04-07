@@ -3,7 +3,7 @@ This is a small program function that I've written
 
 这是微信小程序中的瀑布流上拉加载功能
 
-
+![image](https://upload-images.jianshu.io/upload_images/7465865-dec18261dff0f364.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/399) 
 主要功能 
 
 1.调取后台数据接口
