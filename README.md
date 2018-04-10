@@ -2,8 +2,6 @@
 This is a small program function that I've written
 
 这是微信小程序中的瀑布流上拉加载功能
-![image](https://upload-images.jianshu.io/upload_images/7465865-dec18261dff0f364.gif)
-![image](https://github.com/meiqi1992/MQVerCodeInputView/blob/master/verCodeView.gif)
 主要功能 
 
 1.调取后台数据接口
