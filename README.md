@@ -1,7 +1,7 @@
 # wxApplet
-This is a small program function that I've written
 
 这是微信小程序中的瀑布流上拉加载功能
+实现方法  左右各2列
 主要功能 
 
 1.调取后台数据接口
